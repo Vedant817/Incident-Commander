@@ -194,10 +194,13 @@ The system includes 10+ sample runbooks covering:
 
 Key configuration options in `.env`:
 
+- `HUGGINGFACE_API_KEY`: Required for calling hosted Qwen models via Hugging Face Inference
+- `LLM_PROVIDER`: Set to `huggingface` (default) or `ollama` if you are serving Qwen locally
+- `LLM_MODEL`: Defaults to `Qwen/Qwen2.5-7B-Instruct` for reasoning + planning
+- `EMBEDDING_MODEL`: Defaults to `BAAI/bge-large-en` for runbook retrieval embeddings
 - `MCP_MODE`: Set to `sandbox` for safe demo mode, `real` for actual execution
 - `RISK_THRESHOLD`: Maximum acceptable risk score (0.0-1.0)
 - `REQUIRE_APPROVAL`: Require manual approval for all plans
-- `LLM_PROVIDER`: Choose between OpenAI and Anthropic
 
 ## Safety Features
 
