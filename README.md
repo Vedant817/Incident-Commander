@@ -209,3 +209,5 @@ Key configuration options in `.env`:
 3. **Audit Logs**: Complete audit trail of all actions
 4. **Rollback Support**: Automatic rollback on step failures
 5. **Role-Based Access**: Control who can execute plans
+
+mcp-in-action-track-xx
