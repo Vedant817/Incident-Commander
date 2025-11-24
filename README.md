@@ -96,31 +96,7 @@ cp .env.example .env
 ```
 
 Edit `.env` and add your API keys:
-```env
-# LLM Configuration
-OPENAI_API_KEY=your_openai_api_key_here
-# OR
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
 
-LLM_PROVIDER=openai  # or "anthropic"
-LLM_MODEL=gpt-4-turbo-preview  # or "claude-3-5-sonnet-20241022"
-
-# MCP Configuration
-MCP_MODE=sandbox  # "sandbox" for demo, "real" for actual execution
-
-# Vector Store Configuration
-VECTOR_STORE_PATH=vector_store/faiss_index
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
-
-# Agent Configuration
-MAX_PLAN_STEPS=10
-RISK_THRESHOLD=0.7
-REQUIRE_APPROVAL=true
-
-# UI Configuration
-GRADIO_PORT=7860
-GRADIO_SHARE=false
-```
 
 4. **Run the application**
 ```bash
